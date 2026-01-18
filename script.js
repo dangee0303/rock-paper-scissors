@@ -9,20 +9,35 @@
 let getComputerChoice;   
 let getHumanChoice;
 
+const rock = document.getElementById("rock");
+const paper = document.getElementById("paper");
+const scissors = document.getElementById("scissors");
+
+rock.onclick = function(){
+    console.log ("You picked Rock!");
+}
+
+paper.onclick = function(){
+    console.log ("You picked Paper!");
+}
+
+scissors.onclick = function(){
+    console.log ("You picked Scissors!");
+}
+
+
+
 
 getComputerChoice = Math.floor(Math.random()*3);
 if(getComputerChoice === 0) {
-    console.log ("Rock");
-};
+    console.log ("Computer picked Rock");
+};  
 
 if(getComputerChoice === 1) {
-    console.log ("Paper");
+    console.log ("Computer picked Paper");
 };
 
 if(getComputerChoice === 2) {
-    console.log ("Scissors");
+    console.log ("Computer picked Scissors");
 };
 
-getHumanChoice = window.prompt("What do you choose?");
-
-console.log(getHumanChoice);
