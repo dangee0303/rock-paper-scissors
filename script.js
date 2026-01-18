@@ -6,29 +6,26 @@
 //function playRound();
 
 
-let getComputerChoice;   
-let getHumanChoice;
+//let getComputerChoice;   
+//let getHumanChoice;
 
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 
-rock.onclick = function(){
+rock.onclick = function getHumanChoice(){
     console.log ("You picked Rock!");
 }
-
-paper.onclick = function(){
+paper.onclick = function getHumanChoice(){
     console.log ("You picked Paper!");
 }
-
-scissors.onclick = function(){
+scissors.onclick = function getHumanChoice(){
     console.log ("You picked Scissors!");
 }
 
 
 
-
-getComputerChoice = Math.floor(Math.random()*3);
+function getComputerChoice() {Math.floor(Math.random()*3);
 if(getComputerChoice === 0) {
     console.log ("Computer picked Rock");
 };  
@@ -39,5 +36,11 @@ if(getComputerChoice === 1) {
 
 if(getComputerChoice === 2) {
     console.log ("Computer picked Scissors");
-};
+};}
 
+
+
+const computerSelection = getComputerChoice;
+const humanSelection = getHumanChoice
+
+function playRound()
