@@ -4,14 +4,25 @@
 //first to five, then restart
 
 //function playRound();
-const rock = 0;
-const paper = 1;
-const scissors = 2;
+
 
 let getComputerChoice;   
 let getHumanChoice;
 
 
-getComputerChoice = Math.floor (Math.random()*3);
+getComputerChoice = Math.floor(Math.random()*3);
+if(getComputerChoice === 0) {
+    console.log ("Rock");
+};
 
-console.log (getComputerChoice); 
+if(getComputerChoice === 1) {
+    console.log ("Paper");
+};
+
+if(getComputerChoice === 2) {
+    console.log ("Scissors");
+};
+
+getHumanChoice = window.prompt("What do you choose?");
+
+console.log(getHumanChoice);
